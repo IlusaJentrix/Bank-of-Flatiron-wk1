@@ -1,6 +1,6 @@
 import React from "react";
 
-function Search() {
+function Navbar () {
     return (
         <nav className="navbar bg-body-tertiary">
             <div style={{justifyContent : "center"}} className="container-fluid">
@@ -12,8 +12,4 @@ function Search() {
     )
 }
 
-export default Search
-
-
-
-
+export default Navbar

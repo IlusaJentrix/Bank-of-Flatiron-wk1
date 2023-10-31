@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Form ({newTransaction}) {
+function TransactionForm ({newTransaction}) {
     const [formInputData, setFormInputData] = useState ({
         date : "",
         description : "",
@@ -29,7 +29,7 @@ function Form ({newTransaction}) {
             .then ((resp)=> resp.json ())
             .then ((data)=> newTransaction(data))
     }
-    //return the promise object in colunm form on the page using bootsrap.
+    
     return (
         <div>
             <form onSubmit={handleSubmit} className="row p-3">
@@ -51,4 +51,4 @@ function Form ({newTransaction}) {
     )
 }
 
-export default Form
+export default TransactionForm
