@@ -2,9 +2,9 @@ import './App.css';
 
 import React, { useEffect, useState } from 'react';
 //import the created components 
-import TransactionForm  from './src/components/TransactionForm';
-import Search from './src/components/Search';
-import TransactionTable from './src/components/TransactionTable';
+import TransactionForm  from './components/TransactionForm';
+import Search from './components/Search';
+import TransactionTable from './components/TransactionTable';
 
 function App() {
   const [transactions, setTransactions] = useState([])
