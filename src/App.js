@@ -13,7 +13,7 @@ function App() {
   //used typicode link since data wasn't fetching directly from the npoint
 
   useEffect (()=> {
-    fetch (" https://my-json-server.typicode.com/Jentrix-2024/Bank-of-Flatiron-wk1/transactions")
+    fetch ("https://my-json-server.typicode.com/Jentrix-2024/Bank-of-Flatiron-wk1/transactions")
     
 
     
@@ -33,7 +33,7 @@ function App() {
     <div className="App">
       <Search/><br/>
       <TransactionForm newTransaction = {updatedTransactions}/><br/>
-      <TransactionTable arayOfAllTransactions = {transactions}/>
+      <TransactionTable allTransactions = {transactions}/>
     </div>
   );
 }
