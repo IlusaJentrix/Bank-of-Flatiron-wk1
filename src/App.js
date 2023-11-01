@@ -25,6 +25,8 @@ function App() {
     const updatedTransactionsArray = [...transactions, newData]
     setTransactions (updatedTransactionsArray)
   }
+
+  
   //return the imported components to display on the app
 
   return (

@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 
-function TransactionTable ({arayOfAllTransactions}) {
+function TransactionTable ({allTransactions}) {
     const [dataOfArray, setDataOfArray] = useState ("")
 
     function handleSubmit (e) {
@@ -10,7 +10,7 @@ function TransactionTable ({arayOfAllTransactions}) {
         setDataOfArray (e.target.value)
     }
 
-    const oneTransaction = arayOfAllTransactions.filter ((item)=> {
+    const oneTransaction = allTransactions.filter ((item)=> {
         return dataOfArray.toLowerCase () === "" ? item : item.description.toLowerCase ().includes (dataOfArray)
     })
     .map ((transaction)=> {
@@ -67,7 +67,7 @@ function TransactionTable ({arayOfAllTransactions}) {
                         font-weight: bold;
                     }
                     .table tbody tr:hover {
-                        background-color ;
+                        background-color: #f5f5f5;
                     }
                 `}
             </style>
