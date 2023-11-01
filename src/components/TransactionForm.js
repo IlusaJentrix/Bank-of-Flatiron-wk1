@@ -7,7 +7,7 @@ function TransactionForm ({newTransaction}) {
         category : "",
         amount : "",
     });
-
+//function allow input
     function onHandleChange (e) {
         const key = e.target.name
           const value = e.target.value
@@ -29,7 +29,7 @@ function TransactionForm ({newTransaction}) {
             .then ((resp)=> resp.json ())
             .then ((data)=> newTransaction(data))
     }
-    
+    //add the transaction form
     return (
         <div>
             <form onSubmit={handleSubmit} className="row p-3">
