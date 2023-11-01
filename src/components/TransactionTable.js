@@ -67,7 +67,7 @@ function TransactionTable ({arayOfAllTransactions}) {
                         font-weight: bold;
                     }
                     .table tbody tr:hover {
-                        background-color: #f5f5f5;
+                        background-color ;
                     }
                 `}
             </style>
